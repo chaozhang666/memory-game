@@ -13,7 +13,7 @@ const shuffle = () => {
 
 const check = () => {
   if (counter === 2) {
-    if (valueFirst === valueLast) {
+    if (valueFirst === valueLast && idFirst !== idLast) {
       document.getElementById(idFirst).style.visibility = 'hidden';
       document.getElementById(idLast).style.visibility = 'hidden';
       score ++;
